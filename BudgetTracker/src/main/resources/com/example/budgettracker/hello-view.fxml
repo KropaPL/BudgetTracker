@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="731.0" prefWidth="560.0" spacing="20.0" stylesheets="@CssStyle/BackgroundStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.budgettracker.HelloController">
+   <Label fx:id="welcomeText" alignment="TOP_CENTER" contentDisplay="TOP" styleClass="background-label" stylesheets="@CssStyle/BackgroundText.css" text=" BudgetTracker " textAlignment="CENTER" textFill="#45371c" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+      <font>
+         <Font name="Bodoni MT Black Italic" size="40.0" />
+      </font>
+   </Label>
+   <Accordion>
+     <panes>
+       <TitledPane animated="false" text="Styczeń">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+       </TitledPane>
+       <TitledPane animated="false" text="Luty ">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+       </TitledPane>
+       <TitledPane animated="false" text="Marzec">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+       </TitledPane>
+         <TitledPane animated="false" text="Kwiecień">
+            <content>
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+         </TitledPane>
+         <TitledPane animated="false" text="Maj">
+            <content>
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+         </TitledPane>
+         <TitledPane animated="false" text="Czerwiec">
+            <content>
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+         </TitledPane>
+         <TitledPane animated="false" text="Lipiec">
+            <content>
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+         </TitledPane>
+         <TitledPane animated="false" text="Sierpień">
+            <content>
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+         </TitledPane>
+         <TitledPane animated="false" text="Wrzesień">
+            <content>
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+         </TitledPane>
+         <TitledPane animated="false" text="Październik">
+            <content>
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+         </TitledPane>
+         <TitledPane animated="false" text="Listopad">
+            <content>
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+         </TitledPane>
+         <TitledPane animated="false" text="Grudzień">
+            <content>
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+         </TitledPane>
+     </panes>
+   </Accordion>
+   <ToolBar prefHeight="40.0" prefWidth="200.0">
+     <items>
+       <Button fx:id="dochod" mnemonicParsing="false" onAction="#dochod" text="Dodaj dochód" />
+         <Button fx:id="koszty" mnemonicParsing="false" onAction="#koszty" text="Dodaj koszty" />
+         <Button fx:id="Zapisz" mnemonicParsing="false" onAction="#zapisz" text="Zapisz" />
+         <Button fx:id="usun" mnemonicParsing="false" onAction="#usun" text="Usuń" />
+     </items>
+   </ToolBar>
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>
