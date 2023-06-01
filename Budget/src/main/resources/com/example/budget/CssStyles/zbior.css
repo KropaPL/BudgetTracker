@@ -1,0 +1,8 @@
+#zbiorek{
+-fx-border-color: #B27C47;
+-fx-border-width: 2px;
+-fx-border-radius: 5px;
+-fx-background-size: cover;
+-fx-display: flex;
+-fx-flex-direction: column;
+}

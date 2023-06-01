@@ -1,0 +1,8 @@
+#panel{
+-fx-background-color: #D6C5B4;
+-fx-border-color: #B27C47;
+-fx-border-width: 2px;
+-fx-border-radius: 20px;
+-fx-overflow: hidden;
+-fx-background-clip: content-box;
+}
