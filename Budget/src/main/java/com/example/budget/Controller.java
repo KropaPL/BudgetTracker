@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Group;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
@@ -22,6 +23,7 @@ import java.util.ResourceBundle;
 public class Controller implements Initializable {
     float pokazanerazem = 0;
     File currentFile;
+    Image tlo = new Image(getClass().getResourceAsStream("/com/example/budget/Images/ziarenkakawy.png"));
     List<Pane> kontenery = new ArrayList<>();
     @FXML
     private Button przychod, koszt, zapisz, wyczysc;
@@ -30,7 +32,7 @@ public class Controller implements Initializable {
     @FXML
     private DatePicker data;
     @FXML
-    private AnchorPane zbior;
+    private AnchorPane zbior, tloglowne;
     @FXML
     private Text wynik;
     @FXML
@@ -201,6 +203,7 @@ public class Controller implements Initializable {
         zbiorek.setHbarPolicy(ScrollPane.ScrollBarPolicy.AS_NEEDED);
         komunikat.setVisible(false);
         komunikat2.setVisible(false);
+
 
         Platform.runLater(() -> {
             FileChooser fileChooser = new FileChooser();
